@@ -1,0 +1,6 @@
+rds:
+  enabled: true
+  dbName: cellc_digital_db_test
+  dbInstanceClass: db.t3.medium
+  engineVersion: '13.3'
+  storageGB: 20
