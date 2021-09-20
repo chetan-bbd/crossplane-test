@@ -1,0 +1,17 @@
+apiVersion: database.aws.crossplane.io/v1beta1
+kind: RDSInstance
+metadata:
+  name: crossplane-rdsinstance-test
+spec:
+  forProvider:
+    engine: aurora
+    dbClusterIdentifier: crossplane-cluster-test
+    dbInstanceClass: db.t2.small
+    masterPasswordSecretRef:
+      name: crossplane-test-secret-nil
+      namespace: dev
+      key: password
+  writeConnectionSecretToRef:
+    name: rds-instance-test-connection-secret
+    namespace: dev
+  reclaimPolicy: Delete
