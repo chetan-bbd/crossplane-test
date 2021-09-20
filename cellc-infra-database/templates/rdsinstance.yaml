@@ -5,6 +5,7 @@ metadata:
 spec:
   forProvider:
     engine: aurora
+    region: af-south-1
     dbClusterIdentifier: crossplane-cluster-test
     dbInstanceClass: db.t2.small
     masterPasswordSecretRef:
