@@ -8,7 +8,7 @@ spec:
     region: af-south-1
     dbClusterIdentifier: crossplane-cluster-test
     dbInstanceClass: db.t2.small
-    masterUserPasswordSecretRef:
+    masterPasswordSecretRef:
       name: crossplane-test-secret-nil
       namespace: dev
       key: password
