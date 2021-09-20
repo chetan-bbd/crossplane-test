@@ -4,7 +4,7 @@ metadata:
   name: crossplane-rdsinstance-test
 spec:
   forProvider:
-    engine: aurora
+    engine: aurora-postgresql
     region: af-south-1
     dbClusterIdentifier: crossplane-cluster-test
     dbInstanceClass: db.t2.small
