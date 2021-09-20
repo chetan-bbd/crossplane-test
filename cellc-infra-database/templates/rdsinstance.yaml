@@ -9,7 +9,7 @@ spec:
     dbClusterIdentifier: crossplane-cluster-test
     dbInstanceClass: db.t2.small
     masterUserPasswordSecretRef:
-      name: crossplane-cluster-test-connection-secrets
+      name: crossplane-test-secret-nil
       namespace: dev
       key: password
   reclaimPolicy: Delete
