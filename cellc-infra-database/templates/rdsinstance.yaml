@@ -8,10 +8,10 @@ spec:
     region: af-south-1
     dbClusterIdentifier: crossplane-cluster-test
     dbInstanceClass: db.t2.small
-    masterPasswordSecretRef:
-      name: crossplane-test-secret-nil
+    masterUserPasswordSecretRef:
+      name: crossplane-cluster-secret-test
       namespace: dev
-      key: password
+      key: masterpass
   writeConnectionSecretToRef:
     name: rds-instance-test-connection-secret
     namespace: dev
