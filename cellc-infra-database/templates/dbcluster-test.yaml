@@ -15,8 +15,7 @@ spec:
     dbSubnetGroupName: cellcdigital-subnet-group
     vpcSecurityGroupIDs:
       - sg-015474215f201fbdf
-    databaseName: auroraDatabaseTest
     skipFinalSnapshot: true
   writeConnectionSecretToRef:
-    name: aurora-database-test
+    name: crossplane-cluster-test-connection-secrets
     namespace: dev
