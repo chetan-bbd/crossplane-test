@@ -12,4 +12,3 @@ spec:
       name: crossplane-test-secret-nil
       namespace: dev
       key: password
-  reclaimPolicy: Delete
